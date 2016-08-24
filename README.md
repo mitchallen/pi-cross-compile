@@ -21,7 +21,22 @@ If you had a root project folder called __~/raspberry__ and a child folder conta
     docker run -it -v ~/raspberry/hello:/build mitchallen/pi-cross-compile
     
 During the build process, output should be displayed in the terminal. On success, the container will exit and an executable that works on the Pi should be left in your local build directory.
-   
+
+You can find an example project here:
+
+* [bitbucket.org/mitchallen/pi-hello-cross-compile.git](https://bitbucket.org/mitchallen/pi-hello-cross-compile.git)
+* [github.com/mitchallen/pi-hello-cross-compile.git](https://github.com/mitchallen/pi-hello-cross-compile.git)
+
+To use the example project do the following:
+
+    mkdir ~/raspberry
+
+    git clone https://github.com/mitchallen/pi-hello-cross-compile.git --depth=1 hello
+
+    docker run -it -v ~/raspberry/hello:/build mitchallen/pi-cross-compile
+  
+On success an executable that only runs on the Raspberry Pi should be found here: __~/raspberry/hello/bin/hello__. It's up to you to figure out how to get it on your Pi to run it.
+ 
 * * *
  
 ## Tools
@@ -61,6 +76,10 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 * * *
 
 ## Version History
+
+#### Version 0.1.2 release notes
+
+* Added links to example and added usage details
 
 #### Version 0.1.1 release notes
 
