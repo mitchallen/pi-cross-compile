@@ -8,7 +8,7 @@ A Dockerfile to allow cross-compiling C/C++ projects in Ubuntu that will run on 
 
 Note that these instructions were written for a Mac.
 
-To use this container you must pass it a a local path that contains a __Makefile__ and a project to compile. In the example below, substitute __~/MY-PROJECTS/MY-BUILD__ with a path to your local project. Your folder must contain a valid make file called __Makefile__. The make file must contain references to the Raspberry Pi specific tools that will be described below.
+To use this container you must pass it a local path that contains a __Makefile__ and a project to compile. In the example below, substitute __~/MY-PROJECTS/MY-BUILD__ with a path to your local project. Your folder must contain a valid make file called __Makefile__. The make file must contain references to the Raspberry Pi specific tools that will be described below.
 
     docker run -it -v ~/MY-PROJECTS/MY-BUILD:/build mitchallen/pi-cross-compile
     
@@ -61,6 +61,10 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 * * *
 
 ## Version History
+
+#### Version 0.1.1 release notes
+
+* Fixed type-o in README
 
 #### Version 0.1.0 release notes
 
