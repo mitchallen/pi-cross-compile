@@ -31,6 +31,8 @@ To use the example project do the following:
 
     mkdir ~/raspberry
 
+    cd ~/raspberry
+
     git clone https://github.com/mitchallen/pi-hello-cross-compile.git --depth=1 hello
 
     docker run -it -v ~/raspberry/hello:/build mitchallen/pi-cross-compile
@@ -76,6 +78,10 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 * * *
 
 ## Version History
+
+#### Version 0.1.3 release notes
+
+* Added cd command to example usage
 
 #### Version 0.1.2 release notes
 
